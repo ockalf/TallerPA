@@ -1,0 +1,127 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'Antic', sans-serif;
+    font-weight: 100;
+}
+
+:root{
+    --main-color: rgb(138, 70, 226)
+}
+
+h1{
+    font-family: 'Libre Baskerville';
+    background: linear-gradient(to right, var(--main-color) 0%, rgb(77, 46, 148) 100%);
+    padding: 20px 0px;
+    text-indent: 50px;;
+    color: white;
+}
+
+table{
+    border-collapse: collapse !important;
+    margin-top: 30px;
+    margin-right: auto;
+    margin-left: auto;
+    box-shadow: 5px 5px 10px rgb(189, 189, 189);
+    height: fit-content;
+
+}
+
+table th{
+    padding: 5px 20px;
+    background-color: var(--main-color);
+    border: none;
+    color:white;
+    text-transform: capitalize;
+}
+
+table td{
+    padding: 10px 0;
+    text-indent: 10px;
+    text-transform: capitalize;
+}
+
+table tbody tr:nth-child(odd){
+    background-color: rgb(240, 240, 240)
+}
+
+table input{
+    border: none;
+    background-color: transparent;
+    color: white;
+    height: 30px;
+    font-size: 17px;
+}
+
+table input::placeholder{
+    text-transform: capitalize;
+    font-size: 17px;
+    color:white;
+}
+
+table button{
+    display: block;
+    border: none;
+    padding: 5px 10px;
+    margin: auto;
+    border-radius: 2px;
+    background-color: white;
+    color: grey;
+    font-size: 16px;
+    cursor: pointer;
+    opacity: .8;
+
+    transition: all 200ms linear;
+}
+
+table button:hover{
+    opacity: 1;
+}
+
+table a{
+    border: none;
+    padding: 5px 10px;
+    margin: auto;
+    border-radius: 2px;
+    text-decoration: none;
+    margin-right: 5px;
+    color: white;
+    cursor: pointer;
+    opacity: .8;
+    font-size: 15px;
+    
+    transition: all 200ms linear;
+}
+
+table a:hover{
+    opacity: 1;
+}
+
+table tr td a:first-child{
+    background-color: rgb(204, 39, 39);
+}
+
+table tr td a:nth-child(2){
+    background-color: rgb(204, 91, 39);
+}
+
+table tbody tr:first-child{
+    background-color: rgba(138, 70, 226, .9);
+}
+
+@keyframes aparecer{
+    0%{
+        transform: translateX(-100%);
+        opacity: 0;
+    }
+    100%{
+        transform: translateX(0%);
+        opacity: 1;
+    }
+}
+
+table tr.animate:last-child{
+    animation-name: aparecer;
+    animation-duration: 500ms;
+    animation-timing-function: cubic-bezier(.28,.57,.4,1);
+}

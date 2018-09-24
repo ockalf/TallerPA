@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Metodologìa</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css?family=Antic|Libre+Baskerville" rel="stylesheet"> 
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+    <h1>Metodologìa de sistemas</h1>
+    <table id="tablaPersonas" >
+        <thead>
+            <tr>
+
+                <th>nombre</th>
+                <th>nombre científico</th>
+                <th>familia</th>
+                <th>Acciones</th>
+            </tr>
+        </thead>
+
+        <tbody id="cuerpoTabla">
+            <tr>
+                <form id="formPersona">
+                    <input type="hidden" id="id" name="id">
+                    <td>
+                        <input type="text" id="nombre" name="nombre" placeholder="Agregar nuevo...">
+                    </td>
+                    <td>
+                        <input type="text" id="nombreCientifico" name="nombreCientifico">
+                    </td>
+                    <td>
+                        <input type="text" id="familia" name="familia">
+                    </td>
+                    <td>
+                        <button type="button" id="guardarAnimal"> Guardar</button>
+                    </td>
+                </form>
+            </tr>
+
+        </tbody>
+    </table>
+
+    <script src="js/lib/jquery/jquery-3.1.1.min.js" type="text/javascript"></script>
+    <script src="js/lib/usuario/funciones.js" type="text/javascript"></script>
+</body>
+
+</html>
